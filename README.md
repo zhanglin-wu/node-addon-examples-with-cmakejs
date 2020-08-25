@@ -26,5 +26,6 @@ In the absence of a need for features available only in a specific N-API version
 ### References
 
 - [Node.js C++ Addons](https://nodejs.org/api/addons.html#addons_c_addons)
+- [Node.js C++ Addon using Napi/node-addon-api and Cmake](https://medium.com/@gauriatiq/c-native-addon-independent-of-node-js-version-using-napi-node-addon-api-and-cmake-53315582cbd1)
 - [Node.js C++ Addon Examples](https://github.com/nodejs/node-addon-examples)
 - [Using N-API from C++](https://github.com/nodejs/node-addon-api)
