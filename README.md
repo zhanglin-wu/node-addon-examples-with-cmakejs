@@ -2,14 +2,19 @@
 
 ### Examples
 
-The objective of these examples is to demonstrate how to build node.js C++ addons using [CMake.js](https://github.com/cmake-js/cmake-js#readme). For each example, we can just use the following commands to build and test the addon:
+The objective of these examples is to demonstrate how to build node.js C++ addons using [CMake.js](https://github.com/cmake-js/cmake-js#readme). For each example, we can just use the following commands to build, test, and publish the addon:
 
 ```
 npm install
+npm run build
 npm test
+
+npm publish
 ```
 
 Complete CMake.js documentation can be found on the [CMake.js GitHub repository](https://github.com/cmake-js/cmake-js#readme).
+
+Note before publishing the package, we should delete everything in the `./build` directory except the `Release` directory.
 
 ### NAPI_VERSION
 
