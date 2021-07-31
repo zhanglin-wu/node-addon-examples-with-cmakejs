@@ -6,15 +6,15 @@ The objective of these examples is to demonstrate how to build node.js C++ addon
 
 ```
 npm install
+
 npm run build
 npm test
 
+npm pack
 npm publish
 ```
 
 Complete CMake.js documentation can be found on the [CMake.js GitHub repository](https://github.com/cmake-js/cmake-js#readme).
-
-Note before publishing the package, we should delete everything in the `./build` directory except the `Release` directory.
 
 ### NAPI_VERSION
 
