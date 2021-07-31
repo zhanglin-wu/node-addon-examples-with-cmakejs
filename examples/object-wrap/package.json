@@ -1,17 +1,18 @@
 {
-    "name": "smart-number",
-    "version": "1.0.0",
+    "name": "node-addon-example-smart-number",
+    "version": "1.1.4",
     "description": "An example to demonstrate how to create a JavaScript object from a C++ object",
-    "main": "test/smart-number-test.js",
+    "main": "index.js",
+    "scripts": {
+        "build": "cmake-js compile",
+        "test": "node test/smart-number.js"
+    },
+    "files": ["build/Release/*", "*.js", "*.json"],
     "dependencies": {
-        "bindings": "1.2.1",
-        "node-addon-api": "1.0.0"
+        "bindings": "^1.2.1",
+        "node-addon-api": "^1.0.0"
     },
     "devDependencies": {
-        "cmake-js": "6.1.0"
-    },
-    "scripts": {
-        "install": "cmake-js compile",
-        "test": "node test/smart-number.js"
+        "cmake-js": "^6.1.0"
     }
 }

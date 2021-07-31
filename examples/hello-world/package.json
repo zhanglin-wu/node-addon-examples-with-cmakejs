@@ -1,17 +1,18 @@
 {
     "name": "node-addon-hello-world",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Build node.js C++ addon with cmake.js",
     "main": "index.js",
+    "scripts": {
+        "build": "cmake-js compile",
+        "test": "node test/hello-world.js"
+    },
+    "files": ["build/Release/*", "*.js", "*.json"],
     "dependencies": {
         "bindings": "^1.2.1",
         "node-addon-api": "^1.0.0"
     },
     "devDependencies": {
         "cmake-js": "^6.1.0"
-    },
-    "scripts": {
-        "build": "cmake-js compile",
-        "test": "node test-hello-world.js"
     }
 }
